@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to The Pursuit of Happiness</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #333;
+    }
+    .link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #337ab7;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .info {
+      text-align: left;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .csv-link {
+      color: #337ab7;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to The Pursuit of Happiness</h1>
+
+  <div class="info">
+    <h2>DATA ANALYSIS: HAPPINESS DETERMINANTS PER COUNTRY - 2023</h2>
+    <ul>
+      <h3>The 2023 data resulted from the merger of the 3 csv files below:</h3>
+      <p>1. <a class="csv-link" href="https://worldpopulationreview.com/country-rankings/crime-rate-by-country">Crime.csv</a> (Crime Rate by Country 2023)</p>
+      <p>2. <a class="csv-link" href="https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2023">Happiness.csv</a> (World Happiness Report 2023)</p>
+      <p>3. <a class="csv-link" href="https://www.heritage.org/index/explore?view=by-region-country-year&countryids=&regionids=&yearids=24">Freedom.csv</a> (2023 Heritage Foundation Economic Freedom data)</p>
+    </ul>
+
+    <h2>Process</h2>
+    <ol>
+      <li>The .csv files were imported into SQL where the data was housed and merged to produce one database and a corresponding .csv file with 111 unique records: Happiness_Factors.sql and Happiness_Factors.csv</li>
+      <li>The analysis consisted of Scatterplots, Multivariate Regressions, and Interactive Bar Charts using the following variables:</li>
+      <li>Variables included:
+        Y Variable: Happiness Score
+        X Variables: GDP per Capita, Social Support, Healthy Life Expectancy, Corruption, Freedom_Score, Property_Rights, Government_Spending, Business, Trade, and Crime_Index
+      </li>
+    </ol>
+
+
+    <a class="link" href="visualization.html">Go to Visualizations</a>
+
+    <div class="button">
+      <a class="link" href="https://nickdelatour.github.io/crime_map.github.io/new_map.html">Go to Crime Map</a>
+    </div>
+
+    <div class="button">
+      <a class="link" href="app.html">Go to Api</a>
+    </div>
+
+    <div class="button">
+      <a class="link" href="visuals2.html">Go to SQL and Bar charts</a>
+    </div>
+
+  </div>
+</body>
+</html>

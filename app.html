@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Examples</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #e0e0e1eb;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+    }
+    .section p {
+      margin-bottom: 5px;
+    }
+    .route {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #a1a3a9;
+      border-radius: 5px;
+    }
+    .route a {
+      color: #17162e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .route a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>API Examples</h1>
+
+  <div class="section">
+    <h2>Get Total Net Migration for a Country</h2>
+    <p>Retrieve the total net migration for a specific country.</p>
+    <div class="route">
+      <p>Endpoint:</p>
+      <code>/migration/total/COUNTRY</code>
+    </div>
+    <div class="route">
+      <p>Example:</p>
+      <a href="/migration/total/United States">/migration/total/United States</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Get Top 25 Countries for a Year</h2>
+    <p>Retrieve the top 25 countries based on net migration for a specific year.</p>
+    <div class="route">
+      <p>Endpoint:</p>
+      <code>/migration/top/YEAR</code>
+    </div>
+    <div class="route">
+      <p>Example:</p>
+      <a href="/migration/top/2022">/migration/top/2022</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Get Bottom 25 Countries for a Year</h2>
+    <p>Retrieve the bottom 25 countries based on net migration for a specific year.</p>
+    <div class="route">
+      <p>Endpoint:</p>
+      <code>/migration/bottom/YEAR</code>
+    </div>
+    <div class="route">
+      <p>Example:</p>
+      <a href="/migration/bottom/2022">/migration/bottom/2022</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Get Top 15 Countries with Highest Percentage Increase in Net Migration</h2>
+    <p>Retrieve the top 15 countries with the highest percentage increase in net migration over a specified year range.</p>
+    <div class="route">
+      <p>Endpoint:</p>
+      <code>/migration/percentage_increase?year_range=START_YEAR-END_YEAR</code>
+    </div>
+    <div class="route">
+      <p>Example:</p>
+      <a href="/migration/percentage_increase?year_range=2018-2022">/migration/percentage_increase?year_range=2018-2022</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Get Average Net Migration for a Country</h2>
+    <p>Retrieve the average net migration for a specific country.</p>
+    <div class="route">
+      <p>Endpoint:</p>
+      <code>/migration/average/COUNTRY</code>
+    </div>
+    <div class="route">
+      <p>Example:</p>
+      <a href="/migration/average/Japan">/migration/average/Japan</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Get Yearly Change in Net Migration for a Country</h2>
+    <p>Retrieve the yearly change in net migration for a specific country.</p>
+    <div class="route">
+      <p>Endpoint:</p>
+      <code>/migration/yearly_change/COUNTRY</code>
+    </div>
+    <div class="route">
+      <p>Example:</p>
+      <a href="/migration/yearly_change/Israel">/migration/yearly_change/Israel</a>
+    </div>
+    <div class="section">
+        <h2>Get Happiness Score for a Country</h2>
+        <p>Retrieve the happiness score for a specific country.</p>
+        <div class="route">
+          <p>Endpoint:</p>
+          <code>/happiness_score/COUNTRY</code>
+        </div>
+        <div class="route">
+          <p>Example:</p>
+          <a href="/happiness_score/North Korea">/happiness_score/North Korea</a>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>Get Country Factor Value</h2>
+        <p>Retrieve the value of a specific factor for a country.</p>
+        <div class="route">
+          <p>Endpoint:</p>
+          <code>/country_factors/COUNTRY/FACTOR</code>
+        </div>
+        <div class="route">
+          <p>Example:</p>
+          <a href="/country_factors/Turkey/business">/country_factors/Turkey/business</a>
+        </div>
+      </div>
+</body>
+</html>
